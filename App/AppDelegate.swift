@@ -8,7 +8,7 @@
 import UIKit
 import Supabase
 import PostgREST
-
+import Realtime
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private var client:SupabaseClient?
     var database:PostgrestClient?
+    var realtimeClient:RealtimeClient?
     
     private let supabaseUrl = "https://pqxcxltwoifmxcmhghzf.supabase.co"
     private let supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBxeGN4bHR3b2lmbXhjbWhnaHpmIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjAxODczNDQsImV4cCI6MTk3NTc2MzM0NH0.NiufAQmZ3Oy7eP7wNWF-tvH-e2D-UIz-vPLpLAyDMow"
@@ -33,6 +34,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
 
     
+
+        let rt = RealtimeClient(endPoint: "https://pqxcxltwoifmxcmhghzf.supabase.co/realtime/v1", params: ["apikey": supabaseKey])
+        rt.connect()
+        rt.onOpen {
+            let allUsersUpdateChanges = rt.channel(.table("test", schema: "public"))
+            allUsersUpdateChanges.on(.all) { message in
+                print(message)
+            }
+            allUsersUpdateChanges.subscribe()
+        }
+        self.realtimeClient = rt
+        
+      
+//        allUsersUpdateChanges.unsubscribe()
+//        allUsersUpdateChanges.off(.update)
         
                let client = SupabaseClient(supabaseURL:URL(string: supabaseUrl)!, supabaseKey: supabaseKey)
                 let database = PostgrestClient(url: "\(supabaseUrl)/rest/v1", headers: ["apikey":supabaseKey], schema: "public")
