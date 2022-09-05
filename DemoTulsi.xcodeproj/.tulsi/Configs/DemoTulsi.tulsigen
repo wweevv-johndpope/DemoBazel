@@ -1,0 +1,40 @@
+{
+  "additionalFilePaths" : [
+    "ProjectManagement/BUILD",
+    "Lib/Logging/BUILD",
+    "Assets/BUILD",
+    "App/BUILD",
+    "config/BUILD"
+  ],
+  "buildTargets" : [
+    "//App:ios_app",
+    "//ProjectManagement:ProjectManagementTests"
+  ],
+  "optionSet" : {
+    "PostBuildPhaseRunScript" : {
+      "t" : {
+        "//App:ios_app" : "$SRCROOT/tools/upload-symbols -gsp $SRCROOT/App/Resources/GoogleService-Info.plist -p ios $SRCROOT/bazel-bin/App/ios_app.app.dSYM"
+      }
+    },
+    "PreBuildPhaseRunScript" : {
+      "t" : {
+        "//App:ios_app" : "if which swiftlint >/dev/null; then \n  swiftlint \nelse \n  echo 'warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint' \n  exit 1\nfi"
+      }
+    },
+    "ProjectGenerationPlatformConfiguration" : {
+      "p" : "ios_x86_64"
+    }
+  },
+  "projectName" : "DemoTulsi",
+  "sourceFilters" : [
+    "App/...",
+    "App/Base.lproj",
+    "Assets",
+    "Lib/...",
+    "Lib/Logging",
+    "ProjectManagement/...",
+    "ProjectManagement/Sources",
+    "ProjectManagement/Tests",
+    "config"
+  ]
+}

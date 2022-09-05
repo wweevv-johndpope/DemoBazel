@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Supabase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {

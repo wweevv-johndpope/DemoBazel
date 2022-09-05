@@ -1,0 +1,33 @@
+
+<Scheme version="1.3" LastUpgradeVersion="1000">
+    <BuildAction parallelizeBuildables="YES" buildImplicitDependencies="YES">
+        <BuildActionEntries>
+            <BuildActionEntry buildForProfiling="YES" buildForArchiving="YES" buildForRunning="YES" buildForAnalyzing="YES" buildForTesting="YES">
+                <BuildableReference BuildableName="ios_app.app" ReferencedContainer="container:DemoTulsi.xcodeproj" BuildableIdentifier="primary" BlueprintIdentifier="156B37F831073C0C00000000" BlueprintName="ios_app"></BuildableReference>
+            </BuildActionEntry>
+        </BuildActionEntries>
+    </BuildAction>
+    <TestAction selectedDebuggerIdentifier="Xcode.DebuggerFoundation.Debugger.LLDB" shouldUseLaunchSchemeArgsEnv="YES" customLLDBInitFile="$(PROJECT_FILE_PATH)/.tulsi/Utils/lldbinit" buildConfiguration="__TulsiTestRunner_Debug" selectedLauncherIdentifier="Xcode.DebuggerFoundation.Launcher.LLDB">
+        <Testables>
+            <TestableReference skipped="NO">
+                <BuildableReference BlueprintIdentifier="156B37F8778D6F3E00000000" BuildableName="ProjectManagementTests.xctest" ReferencedContainer="container:DemoTulsi.xcodeproj" BlueprintName="ProjectManagementTests" BuildableIdentifier="primary"></BuildableReference>
+            </TestableReference>
+        </Testables>
+        <BuildableProductRunnable runnableDebuggingMode="0">
+            <BuildableReference BuildableIdentifier="primary" ReferencedContainer="container:DemoTulsi.xcodeproj" BlueprintName="ios_app" BlueprintIdentifier="156B37F831073C0C00000000" BuildableName="ios_app.app"></BuildableReference>
+        </BuildableProductRunnable>
+    </TestAction>
+    <LaunchAction useCustomWorkingDirectory="NO" launchStyle="0" selectedDebuggerIdentifier="Xcode.DebuggerFoundation.Debugger.LLDB" buildConfiguration="Debug" debugServiceExtension="internal" selectedLauncherIdentifier="Xcode.DebuggerFoundation.Launcher.LLDB" customLLDBInitFile="$(PROJECT_FILE_PATH)/.tulsi/Utils/lldbinit" ignoresPersistentStateOnLaunch="NO" allowLocationSimulation="YES" debugDocumentVersioning="YES">
+        <EnvironmentVariables></EnvironmentVariables>
+        <BuildableProductRunnable runnableDebuggingMode="0">
+            <BuildableReference BlueprintIdentifier="156B37F831073C0C00000000" BlueprintName="ios_app" ReferencedContainer="container:DemoTulsi.xcodeproj" BuildableName="ios_app.app" BuildableIdentifier="primary"></BuildableReference>
+        </BuildableProductRunnable>
+    </LaunchAction>
+    <ProfileAction shouldUseLaunchSchemeArgsEnv="YES" debugDocumentVersioning="YES" buildConfiguration="__TulsiTestRunner_Release" useCustomWorkingDirectory="NO">
+        <BuildableProductRunnable runnableDebuggingMode="0">
+            <BuildableReference ReferencedContainer="container:DemoTulsi.xcodeproj" BuildableIdentifier="primary" BlueprintIdentifier="156B37F831073C0C00000000" BlueprintName="ios_app" BuildableName="ios_app.app"></BuildableReference>
+        </BuildableProductRunnable>
+    </ProfileAction>
+    <AnalyzeAction buildConfiguration="Debug"></AnalyzeAction>
+    <ArchiveAction revealArchiveInOrganizer="YES" buildConfiguration="Release"></ArchiveAction>
+</Scheme>

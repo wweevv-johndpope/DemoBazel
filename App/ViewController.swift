@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Supabase
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
