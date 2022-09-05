@@ -1,0 +1,1245 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F7784A4099745C900000000 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19C2A2099745C900000000 /* Constants.swift */; };
+		6F7784A42C0AD33200000000 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19C2A22C0AD33200000000 /* Paths.swift */; };
+		6F7784A432873FA200000000 /* TLLoggingUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19C2A232873FA200000000 /* TLLoggingUtil.swift */; };
+		6F7784A454C7708800000000 /* AuthChangeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19C2A254C7708800000000 /* AuthChangeEvent.swift */; };
+		6F7784A45D60BC9600000000 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19C2A25D60BC9600000000 /* SessionManager.swift */; };
+		6F7784A46C7841FA00000000 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19C2A26C7841FA00000000 /* ViewController.swift */; };
+		6F7784A475DE5FA400000000 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19C2A275DE5FA400000000 /* Extensions.swift */; };
+		6F7784A47E75BC0300000000 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19C2A27E75BC0300000000 /* Helpers.swift */; };
+		6F7784A47FD3F8D900000000 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19C2A27FD3F8D900000000 /* Version.swift */; };
+		6F7784A48E13544B00000000 /* GoTrueError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19C2A28E13544B00000000 /* GoTrueError.swift */; };
+		6F7784A4932448AE00000000 /* TLConsoleLogEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19C2A2932448AE00000000 /* TLConsoleLogEngine.swift */; };
+		6F7784A49A5A53D000000000 /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19C2A29A5A53D000000000 /* Entities.swift */; };
+		6F7784A4A7638BDD00000000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19C2A2A7638BDD00000000 /* AppDelegate.swift */; };
+		6F7784A4B49130D400000000 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19C2A2B49130D400000000 /* Environment.swift */; };
+		6F7784A4D3065FD900000000 /* TLLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19C2A2D3065FD900000000 /* TLLogging.swift */; };
+		6F7784A4D88A853100000000 /* TLLoggingUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E19C2A2D88A853100000000 /* TLLoggingUtil.m */; };
+		6F7784A4EBE41D2500000000 /* GoTrueClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E19C2A2EBE41D2500000000 /* GoTrueClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		732E717522E4040300000000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8CEED13A698CBA400000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3921640B22E4040200000000;
+		};
+		732E717576844B6B00000000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8CEED13A698CBA400000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3921640B76844B6A00000000;
+		};
+		732E7175C88860C300000000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8CEED13A698CBA400000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C078434C88860C200000000;
+		};
+		732E7175CCB6700B00000000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8CEED13A698CBA400000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3921640BCCB6700A00000000;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E19C2A2099745C900000000 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = GoTrue/Sources/Constants.swift; sourceTree = "<group>"; };
+		4E19C2A22C0AD33200000000 /* Paths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Paths.swift; path = GoTrue/Sources/Generated/Paths.swift; sourceTree = "<group>"; };
+		4E19C2A232873FA200000000 /* TLLoggingUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TLLoggingUtil.swift; path = Lib/Logging/TLLoggingUtil.swift; sourceTree = "<group>"; };
+		4E19C2A23ECE149F00000000 /* ComposableKeychain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ComposableKeychain.framework; path = "GoTrue/ComposableKeychain.xcframework/ios-arm64_x86_64-simulator/ComposableKeychain.framework"; sourceTree = "<group>"; };
+		4E19C2A254C7708800000000 /* AuthChangeEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthChangeEvent.swift; path = GoTrue/Sources/AuthChangeEvent.swift; sourceTree = "<group>"; };
+		4E19C2A25D60BC9600000000 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = GoTrue/Sources/Internal/SessionManager.swift; sourceTree = "<group>"; };
+		4E19C2A25E8C994900000000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text; name = Base; path = App/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E19C2A262423FEC00000000 /* BUILD */ = {isa = PBXFileReference; lastKnownFileType = text; name = BUILD; path = GoTrue/BUILD; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.python; };
+		4E19C2A2647BAD9900000000 /* BUILD */ = {isa = PBXFileReference; lastKnownFileType = text; name = BUILD; path = App/BUILD; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.python; };
+		4E19C2A26C7841FA00000000 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = App/ViewController.swift; sourceTree = "<group>"; };
+		4E19C2A275DE5FA400000000 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = GoTrue/Sources/Extensions.swift; sourceTree = "<group>"; };
+		4E19C2A276CADF9F00000000 /* BUILD */ = {isa = PBXFileReference; lastKnownFileType = text; name = BUILD; path = Lib/Logging/BUILD; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.python; };
+		4E19C2A2776253E800000000 /* _idx_GoTrue_F7B3F50E_ios_min13.0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = _idx_GoTrue_F7B3F50E_ios_min13.0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E19C2A2797AFF8A00000000 /* BUILD */ = {isa = PBXFileReference; lastKnownFileType = text; name = BUILD; path = config/BUILD; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.python; };
+		4E19C2A27E75BC0300000000 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = GoTrue/Sources/Internal/Helpers.swift; sourceTree = "<group>"; };
+		4E19C2A27FD3F8D900000000 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Version.swift; path = GoTrue/Sources/Version.swift; sourceTree = "<group>"; };
+		4E19C2A280AB196A00000000 /* ios_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = ios_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E19C2A28E13544B00000000 /* GoTrueError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GoTrueError.swift; path = GoTrue/Sources/GoTrueError.swift; sourceTree = "<group>"; };
+		4E19C2A29049881300000000 /* BUILD */ = {isa = PBXFileReference; lastKnownFileType = text; name = BUILD; path = Assets/BUILD; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.python; };
+		4E19C2A2932448AE00000000 /* TLConsoleLogEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TLConsoleLogEngine.swift; path = Lib/Logging/TLConsoleLogEngine.swift; sourceTree = "<group>"; };
+		4E19C2A29A3B8C4E00000000 /* lib_idx_TLLoggingHelper_0D168085_ios_min13.0.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = lib_idx_TLLoggingHelper_0D168085_ios_min13.0.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E19C2A29A5A53D000000000 /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Entities.swift; path = GoTrue/Sources/Generated/Entities.swift; sourceTree = "<group>"; };
+		4E19C2A2A7638BDD00000000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = App/AppDelegate.swift; sourceTree = "<group>"; };
+		4E19C2A2B49130D400000000 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Environment.swift; path = GoTrue/Sources/Internal/Environment.swift; sourceTree = "<group>"; };
+		4E19C2A2C11BF18E00000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = App/Info.plist; sourceTree = "<group>"; };
+		4E19C2A2C788437B00000000 /* URLQueryEncoderKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = URLQueryEncoderKit.framework; path = "GoTrue/URLQueryEncoderKit.xcframework/ios-arm64_x86_64-simulator/URLQueryEncoderKit.framework"; sourceTree = "<group>"; };
+		4E19C2A2CEC93E9800000000 /* TLLoggingUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TLLoggingUtil.h; path = Lib/Logging/TLLoggingUtil.h; sourceTree = "<group>"; };
+		4E19C2A2D3065FD900000000 /* TLLogging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TLLogging.swift; path = Lib/Logging/TLLogging.swift; sourceTree = "<group>"; };
+		4E19C2A2D88A853100000000 /* TLLoggingUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TLLoggingUtil.m; path = Lib/Logging/TLLoggingUtil.m; sourceTree = "<group>"; };
+		4E19C2A2E2CD6FF100000000 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist; name = Info.plist; path = "SupabaseDemo.xcodeproj/.tulsi/tulsi-execution-root/bazel-tulsi-includes/x/x/App/ios_app-intermediates/Info.plist"; sourceTree = SOURCE_ROOT; };
+		4E19C2A2E37044D500000000 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = "GoTrue/KeychainAccess.xcframework/ios-arm64_i386_x86_64-simulator/KeychainAccess.framework"; sourceTree = "<group>"; };
+		4E19C2A2E787579F00000000 /* Get.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Get.framework; path = "GoTrue/Get.xcframework/ios-arm64_x86_64-simulator/Get.framework"; sourceTree = "<group>"; };
+		4E19C2A2E789A39D00000000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Assets/Assets.xcassets; sourceTree = "<group>"; };
+		4E19C2A2EBE41D2500000000 /* GoTrueClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GoTrueClient.swift; path = GoTrue/Sources/GoTrueClient.swift; sourceTree = "<group>"; };
+		4E19C2A2FC12CFC400000000 /* _idx_TLLogging_6291AD38_ios_min13.0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = _idx_TLLogging_6291AD38_ios_min13.0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E19C2A2FF5E03F400000000 /* _idx_App_Classes_7152C54B_ios_min13.0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = _idx_App_Classes_7152C54B_ios_min13.0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E19C2A2FF65340500000000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text; name = Base; path = App/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		D366ED221F8852AE00000000 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				4E19C2A29A5A53D000000000 /* Entities.swift */,
+				4E19C2A22C0AD33200000000 /* Paths.swift */,
+			);
+			name = Generated;
+			sourceTree = "<group>";
+		};
+		D366ED222D3A144E00000000 /* ComposableKeychain.xcframework */ = {
+			isa = PBXGroup;
+			children = (
+				D366ED22E4B3C19600000000 /* ios-arm64_x86_64-simulator */,
+			);
+			name = ComposableKeychain.xcframework;
+			sourceTree = "<group>";
+		};
+		D366ED225996D09200000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D366ED229319351000000000 /* Indexer */,
+				D366ED22E7A5B9BB00000000 /* bazel-tulsi-includes */,
+				4E19C2A280AB196A00000000 /* ios_app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D366ED225F11194300000000 /* GoTrue */ = {
+			isa = PBXGroup;
+			children = (
+				4E19C2A262423FEC00000000 /* BUILD */,
+				D366ED222D3A144E00000000 /* ComposableKeychain.xcframework */,
+				D366ED229273490900000000 /* Get.xcframework */,
+				D366ED2283FC828E00000000 /* KeychainAccess.xcframework */,
+				D366ED22DA90C24500000000 /* Sources */,
+				D366ED227C0EB1F200000000 /* URLQueryEncoderKit.xcframework */,
+			);
+			name = GoTrue;
+			sourceTree = "<group>";
+		};
+		D366ED2268538E1600000000 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4E19C2A2E789A39D00000000 /* Assets.xcassets */,
+				4E19C2A29049881300000000 /* BUILD */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		D366ED227C0EB1F200000000 /* URLQueryEncoderKit.xcframework */ = {
+			isa = PBXGroup;
+			children = (
+				D366ED22E4B3C19600000002 /* ios-arm64_x86_64-simulator */,
+			);
+			name = URLQueryEncoderKit.xcframework;
+			sourceTree = "<group>";
+		};
+		D366ED228005157500000000 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				4E19C2A2797AFF8A00000000 /* BUILD */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		D366ED22827A2ED600000000 /* x */ = {
+			isa = PBXGroup;
+			children = (
+				D366ED22827A2ED600000001 /* x */,
+			);
+			name = x;
+			sourceTree = "<group>";
+		};
+		D366ED22827A2ED600000001 /* x */ = {
+			isa = PBXGroup;
+			children = (
+				D366ED22F3F5ECDC00000001 /* App */,
+			);
+			name = x;
+			sourceTree = "<group>";
+		};
+		D366ED2283FC828E00000000 /* KeychainAccess.xcframework */ = {
+			isa = PBXGroup;
+			children = (
+				D366ED22E21DB81F00000000 /* ios-arm64_i386_x86_64-simulator */,
+			);
+			name = KeychainAccess.xcframework;
+			sourceTree = "<group>";
+		};
+		D366ED229273490900000000 /* Get.xcframework */ = {
+			isa = PBXGroup;
+			children = (
+				D366ED22E4B3C19600000001 /* ios-arm64_x86_64-simulator */,
+			);
+			name = Get.xcframework;
+			sourceTree = "<group>";
+		};
+		D366ED229319351000000000 /* Indexer */ = {
+			isa = PBXGroup;
+			children = (
+				4E19C2A2FF5E03F400000000 /* _idx_App_Classes_7152C54B_ios_min13.0.framework */,
+				4E19C2A2776253E800000000 /* _idx_GoTrue_F7B3F50E_ios_min13.0.framework */,
+				4E19C2A2FC12CFC400000000 /* _idx_TLLogging_6291AD38_ios_min13.0.framework */,
+				4E19C2A29A3B8C4E00000000 /* lib_idx_TLLoggingHelper_0D168085_ios_min13.0.a */,
+			);
+			name = Indexer;
+			sourceTree = "<group>";
+		};
+		D366ED229A71055400000000 /* ios_app-intermediates */ = {
+			isa = PBXGroup;
+			children = (
+				4E19C2A2E2CD6FF100000000 /* Info.plist */,
+			);
+			name = "ios_app-intermediates";
+			sourceTree = "<group>";
+		};
+		D366ED22B203609300000000 /* mainGroup */ = {
+			isa = PBXGroup;
+			children = (
+				D366ED22F3F5ECDC00000000 /* App */,
+				D366ED2268538E1600000000 /* Assets */,
+				D366ED225F11194300000000 /* GoTrue */,
+				D366ED22B2CE360500000000 /* Lib */,
+				D366ED225996D09200000000 /* Products */,
+				D366ED228005157500000000 /* config */,
+			);
+			name = mainGroup;
+			sourceTree = SOURCE_ROOT;
+		};
+		D366ED22B2CE360500000000 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				D366ED22DA9002AA00000000 /* Logging */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		D366ED22D69E7FE900000000 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				4E19C2A2B49130D400000000 /* Environment.swift */,
+				4E19C2A27E75BC0300000000 /* Helpers.swift */,
+				4E19C2A25D60BC9600000000 /* SessionManager.swift */,
+			);
+			name = Internal;
+			sourceTree = "<group>";
+		};
+		D366ED22DA9002AA00000000 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				4E19C2A276CADF9F00000000 /* BUILD */,
+				4E19C2A2932448AE00000000 /* TLConsoleLogEngine.swift */,
+				4E19C2A2D3065FD900000000 /* TLLogging.swift */,
+				4E19C2A2CEC93E9800000000 /* TLLoggingUtil.h */,
+				4E19C2A2D88A853100000000 /* TLLoggingUtil.m */,
+				4E19C2A232873FA200000000 /* TLLoggingUtil.swift */,
+			);
+			name = Logging;
+			sourceTree = "<group>";
+		};
+		D366ED22DA90C24500000000 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4E19C2A254C7708800000000 /* AuthChangeEvent.swift */,
+				4E19C2A2099745C900000000 /* Constants.swift */,
+				4E19C2A275DE5FA400000000 /* Extensions.swift */,
+				D366ED221F8852AE00000000 /* Generated */,
+				4E19C2A2EBE41D2500000000 /* GoTrueClient.swift */,
+				4E19C2A28E13544B00000000 /* GoTrueError.swift */,
+				D366ED22D69E7FE900000000 /* Internal */,
+				4E19C2A27FD3F8D900000000 /* Version.swift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		D366ED22E21DB81F00000000 /* ios-arm64_i386_x86_64-simulator */ = {
+			isa = PBXGroup;
+			children = (
+				4E19C2A2E37044D500000000 /* KeychainAccess.framework */,
+			);
+			name = "ios-arm64_i386_x86_64-simulator";
+			sourceTree = "<group>";
+		};
+		D366ED22E4B3C19600000000 /* ios-arm64_x86_64-simulator */ = {
+			isa = PBXGroup;
+			children = (
+				4E19C2A23ECE149F00000000 /* ComposableKeychain.framework */,
+			);
+			name = "ios-arm64_x86_64-simulator";
+			sourceTree = "<group>";
+		};
+		D366ED22E4B3C19600000001 /* ios-arm64_x86_64-simulator */ = {
+			isa = PBXGroup;
+			children = (
+				4E19C2A2E787579F00000000 /* Get.framework */,
+			);
+			name = "ios-arm64_x86_64-simulator";
+			sourceTree = "<group>";
+		};
+		D366ED22E4B3C19600000002 /* ios-arm64_x86_64-simulator */ = {
+			isa = PBXGroup;
+			children = (
+				4E19C2A2C788437B00000000 /* URLQueryEncoderKit.framework */,
+			);
+			name = "ios-arm64_x86_64-simulator";
+			sourceTree = "<group>";
+		};
+		D366ED22E7A5B9BB00000000 /* bazel-tulsi-includes */ = {
+			isa = PBXGroup;
+			children = (
+				D366ED22827A2ED600000000 /* x */,
+			);
+			name = "bazel-tulsi-includes";
+			sourceTree = "<group>";
+		};
+		D366ED22F3F5ECDC00000000 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4E19C2A2A7638BDD00000000 /* AppDelegate.swift */,
+				4E19C2A2647BAD9900000000 /* BUILD */,
+				4E19C2A2C11BF18E00000000 /* Info.plist */,
+				224443585EC943A300000000 /* LaunchScreen.storyboard */,
+				224443589E44410000000000 /* Main.storyboard */,
+				4E19C2A26C7841FA00000000 /* ViewController.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		D366ED22F3F5ECDC00000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D366ED229A71055400000000 /* ios_app-intermediates */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		0C078434C88860C200000000 /* _bazel_clean_ */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "\"/usr/local/bin/bazel\" \"bazel-bin\"";
+			buildConfigurationList = A13FA755F6E22ADC00000000 /* Build configuration list for PBXLegacyTarget "_bazel_clean_" */;
+			buildPhases = (
+			);
+			buildToolPath = "${PROJECT_FILE_PATH}/.tulsi/Scripts/bazel_clean.sh";
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = _bazel_clean_;
+			passBuildSettingsInEnvironment = 1;
+			productName = _bazel_clean_;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		3921640B22E4040200000000 /* _idx_TLLoggingHelper_0D168085_ios_min13.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A13FA755B657B26000000000 /* Build configuration list for PBXNativeTarget "_idx_TLLoggingHelper_0D168085_ios_min13.0" */;
+			buildPhases = (
+				9F5D38C50000000000000003 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD1DA6C7C88860C300000000 /* PBXTargetDependency */,
+			);
+			name = _idx_TLLoggingHelper_0D168085_ios_min13.0;
+			productName = _idx_TLLoggingHelper_0D168085_ios_min13.0;
+			productReference = 4E19C2A29A3B8C4E00000000 /* lib_idx_TLLoggingHelper_0D168085_ios_min13.0.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3921640B76844B6A00000000 /* _idx_GoTrue_F7B3F50E_ios_min13.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A13FA755F981B3C900000000 /* Build configuration list for PBXNativeTarget "_idx_GoTrue_F7B3F50E_ios_min13.0" */;
+			buildPhases = (
+				9F5D38C50000000000000001 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD1DA6C7C88860C300000000 /* PBXTargetDependency */,
+			);
+			name = _idx_GoTrue_F7B3F50E_ios_min13.0;
+			productName = _idx_GoTrue_F7B3F50E_ios_min13.0;
+			productReference = 4E19C2A2776253E800000000 /* _idx_GoTrue_F7B3F50E_ios_min13.0.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3921640BCCB6700A00000000 /* _idx_TLLogging_6291AD38_ios_min13.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A13FA75501D7F46800000000 /* Build configuration list for PBXNativeTarget "_idx_TLLogging_6291AD38_ios_min13.0" */;
+			buildPhases = (
+				9F5D38C50000000000000002 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD1DA6C7C88860C300000000 /* PBXTargetDependency */,
+				CD1DA6C722E4040300000000 /* PBXTargetDependency */,
+			);
+			name = _idx_TLLogging_6291AD38_ios_min13.0;
+			productName = _idx_TLLogging_6291AD38_ios_min13.0;
+			productReference = 4E19C2A2FC12CFC400000000 /* _idx_TLLogging_6291AD38_ios_min13.0.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3921640BF282404E00000000 /* ios_app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A13FA755A248011C00000000 /* Build configuration list for PBXNativeTarget "ios_app" */;
+			buildPhases = (
+				65C17D015F1279E400000000 /* build //App:ios_app */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD1DA6C7C88860C300000000 /* PBXTargetDependency */,
+			);
+			name = ios_app;
+			productName = ios_app;
+			productReference = 4E19C2A280AB196A00000000 /* ios_app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3921640BFFE3588A00000000 /* _idx_App_Classes_7152C54B_ios_min13.0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A13FA755DAD4EE3900000000 /* Build configuration list for PBXNativeTarget "_idx_App_Classes_7152C54B_ios_min13.0" */;
+			buildPhases = (
+				9F5D38C50000000000000000 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD1DA6C7C88860C300000000 /* PBXTargetDependency */,
+				CD1DA6C776844B6B00000000 /* PBXTargetDependency */,
+				CD1DA6C7CCB6700B00000000 /* PBXTargetDependency */,
+			);
+			name = _idx_App_Classes_7152C54B_ios_min13.0;
+			productName = _idx_App_Classes_7152C54B_ios_min13.0;
+			productReference = 4E19C2A2FF5E03F400000000 /* _idx_App_Classes_7152C54B_ios_min13.0.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8CEED13A698CBA400000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 1000;
+			};
+			buildConfigurationList = A13FA75594A7243B00000000 /* Build configuration list for PBXProject "SupabaseDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = D366ED22B203609300000000 /* mainGroup */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C078434C88860C200000000 /* _bazel_clean_ */,
+				3921640BFFE3588A00000000 /* _idx_App_Classes_7152C54B_ios_min13.0 */,
+				3921640B76844B6A00000000 /* _idx_GoTrue_F7B3F50E_ios_min13.0 */,
+				3921640B22E4040200000000 /* _idx_TLLoggingHelper_0D168085_ios_min13.0 */,
+				3921640BCCB6700A00000000 /* _idx_TLLogging_6291AD38_ios_min13.0 */,
+				3921640BF282404E00000000 /* ios_app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65C17D015F1279E400000000 /* build //App:ios_app */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "build //App:ios_app";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "set -e\n\nexec \"${PROJECT_FILE_PATH}/.tulsi/Scripts/bazel_build.py\" //App:ios_app --bazel \"/usr/local/bin/bazel\" --bazel_bin_path \"bazel-bin\" --verbose ";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F5D38C50000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				6F7784A4A7638BDD00000000 /* AppDelegate.swift in Sources */,
+				6F7784A46C7841FA00000000 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5D38C50000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				6F7784A454C7708800000000 /* AuthChangeEvent.swift in Sources */,
+				6F7784A4099745C900000000 /* Constants.swift in Sources */,
+				6F7784A475DE5FA400000000 /* Extensions.swift in Sources */,
+				6F7784A49A5A53D000000000 /* Entities.swift in Sources */,
+				6F7784A42C0AD33200000000 /* Paths.swift in Sources */,
+				6F7784A4EBE41D2500000000 /* GoTrueClient.swift in Sources */,
+				6F7784A48E13544B00000000 /* GoTrueError.swift in Sources */,
+				6F7784A4B49130D400000000 /* Environment.swift in Sources */,
+				6F7784A47E75BC0300000000 /* Helpers.swift in Sources */,
+				6F7784A45D60BC9600000000 /* SessionManager.swift in Sources */,
+				6F7784A47FD3F8D900000000 /* Version.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5D38C50000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				6F7784A4932448AE00000000 /* TLConsoleLogEngine.swift in Sources */,
+				6F7784A4D3065FD900000000 /* TLLogging.swift in Sources */,
+				6F7784A432873FA200000000 /* TLLoggingUtil.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F5D38C50000000000000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				6F7784A4D88A853100000000 /* TLLoggingUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD1DA6C722E4040300000000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3921640B22E4040200000000 /* _idx_TLLoggingHelper_0D168085_ios_min13.0 */;
+			targetProxy = 732E717522E4040300000000 /* PBXContainerItemProxy */;
+		};
+		CD1DA6C776844B6B00000000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3921640B76844B6A00000000 /* _idx_GoTrue_F7B3F50E_ios_min13.0 */;
+			targetProxy = 732E717576844B6B00000000 /* PBXContainerItemProxy */;
+		};
+		CD1DA6C7C88860C300000000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C078434C88860C200000000 /* _bazel_clean_ */;
+			targetProxy = 732E7175C88860C300000000 /* PBXContainerItemProxy */;
+		};
+		CD1DA6C7CCB6700B00000000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3921640BCCB6700A00000000 /* _idx_TLLogging_6291AD38_ios_min13.0 */;
+			targetProxy = 732E7175CCB6700B00000000 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		224443585EC943A300000000 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E19C2A25E8C994900000000 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		224443589E44410000000000 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E19C2A2FF65340500000000 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		083681C10DCD4D8700000000 /* __TulsiTestRunner_Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				DONT_RUN_SWIFT_STDLIB_TOOL = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "--version";
+				OTHER_LDFLAGS = "--version";
+				OTHER_SWIFT_FLAGS = "--version";
+				PYTHONIOENCODING = utf8;
+				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PRODUCT_NAME).h";
+				SWIFT_VERSION = 5.6;
+				TULSI_BWRS = "$(PROJECT_FILE_PATH)/.tulsi/tulsi-execution-root";
+				TULSI_EXECUTION_ROOT = "$(PROJECT_FILE_PATH)/.tulsi/tulsi-execution-root";
+				TULSI_LLDBINIT_FILE = "$(PROJECT_FILE_PATH)/.tulsi/Utils/lldbinit";
+				TULSI_OUTPUT_BASE = "$(PROJECT_FILE_PATH)/.tulsi/tulsi-output-base";
+				TULSI_PROJECT = SupabaseDemo;
+				TULSI_VERSION = 0.20220310.88;
+				TULSI_WR = "$(SRCROOT)";
+			};
+			name = __TulsiTestRunner_Debug;
+		};
+		083681C10DCD4D8700000001 /* __TulsiTestRunner_Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Stub Launch Image";
+				BAZEL_TARGET = "//App:ios_app";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "${PROJECT_FILE_PATH}/.tulsi/Resources/StubInfoPlist.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "--version";
+				OTHER_LDFLAGS = "--version";
+				OTHER_SWIFT_FLAGS = "--version";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thanhvu.test;
+				PRODUCT_NAME = ios_app;
+				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PRODUCT_NAME).h";
+				TULSI_BUILD_PATH = App;
+				TULSI_XCODE_VERSION = 13.4.1.13F100;
+			};
+			name = __TulsiTestRunner_Debug;
+		};
+		083681C1C5E030F400000000 /* __TulsiTestRunner_Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				DONT_RUN_SWIFT_STDLIB_TOOL = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "--version";
+				OTHER_LDFLAGS = "--version";
+				OTHER_SWIFT_FLAGS = "--version";
+				PYTHONIOENCODING = utf8;
+				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PRODUCT_NAME).h";
+				SWIFT_VERSION = 5.6;
+				TULSI_BWRS = "$(PROJECT_FILE_PATH)/.tulsi/tulsi-execution-root";
+				TULSI_EXECUTION_ROOT = "$(PROJECT_FILE_PATH)/.tulsi/tulsi-execution-root";
+				TULSI_LLDBINIT_FILE = "$(PROJECT_FILE_PATH)/.tulsi/Utils/lldbinit";
+				TULSI_OUTPUT_BASE = "$(PROJECT_FILE_PATH)/.tulsi/tulsi-output-base";
+				TULSI_PROJECT = SupabaseDemo;
+				TULSI_VERSION = 0.20220310.88;
+				TULSI_WR = "$(SRCROOT)";
+			};
+			name = __TulsiTestRunner_Release;
+		};
+		083681C1C5E030F400000001 /* __TulsiTestRunner_Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Stub Launch Image";
+				BAZEL_TARGET = "//App:ios_app";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "${PROJECT_FILE_PATH}/.tulsi/Resources/StubInfoPlist.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "--version";
+				OTHER_LDFLAGS = "--version";
+				OTHER_SWIFT_FLAGS = "--version";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thanhvu.test;
+				PRODUCT_NAME = ios_app;
+				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PRODUCT_NAME).h";
+				TULSI_BUILD_PATH = App;
+				TULSI_XCODE_VERSION = 13.4.1.13F100;
+			};
+			name = __TulsiTestRunner_Release;
+		};
+		083681C1F52E5D1900000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				DONT_RUN_SWIFT_STDLIB_TOOL = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(TULSI_EXECUTION_ROOT)",
+					"$(TULSI_WR)/bazel-bin",
+					"$(TULSI_WR)/bazel-genfiles",
+					"$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PYTHONIOENCODING = utf8;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.6;
+				TULSI_BWRS = "$(PROJECT_FILE_PATH)/.tulsi/tulsi-execution-root";
+				TULSI_EXECUTION_ROOT = "$(PROJECT_FILE_PATH)/.tulsi/tulsi-execution-root";
+				TULSI_LLDBINIT_FILE = "$(PROJECT_FILE_PATH)/.tulsi/Utils/lldbinit";
+				TULSI_OUTPUT_BASE = "$(PROJECT_FILE_PATH)/.tulsi/tulsi-output-base";
+				TULSI_PROJECT = SupabaseDemo;
+				TULSI_VERSION = 0.20220310.88;
+				TULSI_WR = "$(SRCROOT)";
+			};
+			name = Release;
+		};
+		083681C1F52E5D1900000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TULSI_EXECUTION_ROOT)/Thirdparty/Supabase/Supabase.xcframework/ios-arm64_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/Thirdparty/Supabase/AnyCodable.xcframework/ios-arm64_i386_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/Thirdparty/Supabase/ComposableKeychain.xcframework/ios-arm64_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/Thirdparty/Supabase/Starscream.xcframework/ios-arm64_i386_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/GoTrue/URLQueryEncoderKit.xcframework/ios-arm64_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/GoTrue/ComposableKeychain.xcframework/ios-arm64_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/GoTrue/Get.xcframework/ios-arm64_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/GoTrue/KeychainAccess.xcframework/ios-arm64_i386_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/Thirdparty/Supabase/SupabaseStorage.xcframework/ios-arm64_i386_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/Thirdparty/Supabase/KeychainAccess.xcframework/ios-arm64_i386_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/Thirdparty/Supabase/Get.xcframework/ios-arm64_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/Thirdparty/Supabase/Realtime.xcframework/ios-arm64_i386_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/Thirdparty/Supabase/URLQueryEncoderKit.xcframework/ios-arm64_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/Thirdparty/Supabase/XCTestDynamicOverlay.xcframework/ios-arm64_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/Thirdparty/Supabase/PostgREST.xcframework/ios-arm64_x86_64-simulator",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TULSI_WR)/.",
+					"$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				OTHER_CFLAGS = (
+					"-D_FORTIFY_SOURCE=1",
+					"-D__DATE__=\"redacted\"",
+					"-D__TIMESTAMP__=\"redacted\"",
+					"-D__TIME__=\"redacted\"",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Lib/Logging/TLLoggingHelper.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/GoTrue/ComposableKeychainXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/GoTrue/GetXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/GoTrue/URLQueryEncoderXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/GoTrue/KeychainAccessXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase/SupabaseXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase/PostgREST.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase/AnyCodableXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase/ComposableKeychainXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase/KeychainAccessXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase/GetXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase/RealtimeXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase/StarscreamXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase/SupabaseStorageXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase/URLQueryEncoderXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase/XCTestDynamicOverlayXCFramework.swift.modulemap";
+				PRODUCT_NAME = _idx_App_Classes_7152C54B_ios_min13.0;
+				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "$(inherited) $(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Lib/Logging $(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/GoTrue $(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase $(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/App";
+			};
+			name = Release;
+		};
+		083681C1F52E5D1900000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TULSI_EXECUTION_ROOT)/GoTrue/URLQueryEncoderKit.xcframework/ios-arm64_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/GoTrue/ComposableKeychain.xcframework/ios-arm64_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/GoTrue/Get.xcframework/ios-arm64_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/GoTrue/KeychainAccess.xcframework/ios-arm64_i386_x86_64-simulator",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TULSI_WR)/.",
+					"$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				OTHER_CFLAGS = (
+					"-D_FORTIFY_SOURCE=1",
+					"-D__DATE__=\"redacted\"",
+					"-D__TIMESTAMP__=\"redacted\"",
+					"-D__TIME__=\"redacted\"",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/GoTrue/ComposableKeychainXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/GoTrue/GetXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/GoTrue/URLQueryEncoderXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/GoTrue/KeychainAccessXCFramework.swift.modulemap";
+				PRODUCT_NAME = _idx_GoTrue_F7B3F50E_ios_min13.0;
+				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "$(inherited) $(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/GoTrue";
+			};
+			name = Release;
+		};
+		083681C1F52E5D1900000003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TULSI_WR)/.",
+					"$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				OTHER_CFLAGS = (
+					"-D_FORTIFY_SOURCE=1",
+					"-D__DATE__=\"redacted\"",
+					"-D__TIMESTAMP__=\"redacted\"",
+					"-D__TIME__=\"redacted\"",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Lib/Logging/TLLoggingHelper.swift.modulemap";
+				PRODUCT_NAME = _idx_TLLogging_6291AD38_ios_min13.0;
+				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "$(inherited) $(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Lib/Logging";
+			};
+			name = Release;
+		};
+		083681C1F52E5D1900000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TULSI_WR)/.",
+					"$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				OTHER_CFLAGS = (
+					"-D_FORTIFY_SOURCE=1",
+					"-D__DATE__=\"redacted\"",
+					"-D__TIMESTAMP__=\"redacted\"",
+					"-D__TIME__=\"redacted\"",
+				);
+				PRODUCT_NAME = _idx_TLLoggingHelper_0D168085_ios_min13.0;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(TULSI_WR)";
+			};
+			name = Release;
+		};
+		083681C1F52E5D1900000005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Stub Launch Image";
+				BAZEL_TARGET = "//App:ios_app";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = "NDEBUG=1";
+				INFOPLIST_FILE = "${PROJECT_FILE_PATH}/.tulsi/Resources/StubInfoPlist.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thanhvu.test;
+				PRODUCT_NAME = ios_app;
+				SDKROOT = iphoneos;
+				TULSI_BUILD_PATH = App;
+				TULSI_XCODE_VERSION = 13.4.1.13F100;
+			};
+			name = Release;
+		};
+		083681C1FDC565CF00000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "";
+				DONT_RUN_SWIFT_STDLIB_TOOL = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(TULSI_EXECUTION_ROOT)",
+					"$(TULSI_WR)/bazel-bin",
+					"$(TULSI_WR)/bazel-genfiles",
+					"$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PYTHONIOENCODING = utf8;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.6;
+				TULSI_BWRS = "$(PROJECT_FILE_PATH)/.tulsi/tulsi-execution-root";
+				TULSI_EXECUTION_ROOT = "$(PROJECT_FILE_PATH)/.tulsi/tulsi-execution-root";
+				TULSI_LLDBINIT_FILE = "$(PROJECT_FILE_PATH)/.tulsi/Utils/lldbinit";
+				TULSI_OUTPUT_BASE = "$(PROJECT_FILE_PATH)/.tulsi/tulsi-output-base";
+				TULSI_PROJECT = SupabaseDemo;
+				TULSI_VERSION = 0.20220310.88;
+				TULSI_WR = "$(SRCROOT)";
+			};
+			name = Debug;
+		};
+		083681C1FDC565CF00000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TULSI_EXECUTION_ROOT)/Thirdparty/Supabase/Supabase.xcframework/ios-arm64_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/Thirdparty/Supabase/AnyCodable.xcframework/ios-arm64_i386_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/Thirdparty/Supabase/ComposableKeychain.xcframework/ios-arm64_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/Thirdparty/Supabase/Starscream.xcframework/ios-arm64_i386_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/GoTrue/URLQueryEncoderKit.xcframework/ios-arm64_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/GoTrue/ComposableKeychain.xcframework/ios-arm64_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/GoTrue/Get.xcframework/ios-arm64_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/GoTrue/KeychainAccess.xcframework/ios-arm64_i386_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/Thirdparty/Supabase/SupabaseStorage.xcframework/ios-arm64_i386_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/Thirdparty/Supabase/KeychainAccess.xcframework/ios-arm64_i386_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/Thirdparty/Supabase/Get.xcframework/ios-arm64_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/Thirdparty/Supabase/Realtime.xcframework/ios-arm64_i386_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/Thirdparty/Supabase/URLQueryEncoderKit.xcframework/ios-arm64_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/Thirdparty/Supabase/XCTestDynamicOverlay.xcframework/ios-arm64_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/Thirdparty/Supabase/PostgREST.xcframework/ios-arm64_x86_64-simulator",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TULSI_WR)/.",
+					"$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				OTHER_CFLAGS = (
+					"-D_FORTIFY_SOURCE=1",
+					"-D__DATE__=\"redacted\"",
+					"-D__TIMESTAMP__=\"redacted\"",
+					"-D__TIME__=\"redacted\"",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Lib/Logging/TLLoggingHelper.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/GoTrue/ComposableKeychainXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/GoTrue/GetXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/GoTrue/URLQueryEncoderXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/GoTrue/KeychainAccessXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase/SupabaseXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase/PostgREST.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase/AnyCodableXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase/ComposableKeychainXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase/KeychainAccessXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase/GetXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase/RealtimeXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase/StarscreamXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase/SupabaseStorageXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase/URLQueryEncoderXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase/XCTestDynamicOverlayXCFramework.swift.modulemap";
+				PRODUCT_NAME = _idx_App_Classes_7152C54B_ios_min13.0;
+				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "$(inherited) $(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Lib/Logging $(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/GoTrue $(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Thirdparty/Supabase $(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/App";
+			};
+			name = Debug;
+		};
+		083681C1FDC565CF00000002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TULSI_EXECUTION_ROOT)/GoTrue/URLQueryEncoderKit.xcframework/ios-arm64_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/GoTrue/ComposableKeychain.xcframework/ios-arm64_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/GoTrue/Get.xcframework/ios-arm64_x86_64-simulator",
+					"$(TULSI_EXECUTION_ROOT)/GoTrue/KeychainAccess.xcframework/ios-arm64_i386_x86_64-simulator",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TULSI_WR)/.",
+					"$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				OTHER_CFLAGS = (
+					"-D_FORTIFY_SOURCE=1",
+					"-D__DATE__=\"redacted\"",
+					"-D__TIMESTAMP__=\"redacted\"",
+					"-D__TIME__=\"redacted\"",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/GoTrue/ComposableKeychainXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/GoTrue/GetXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/GoTrue/URLQueryEncoderXCFramework.swift.modulemap -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/GoTrue/KeychainAccessXCFramework.swift.modulemap";
+				PRODUCT_NAME = _idx_GoTrue_F7B3F50E_ios_min13.0;
+				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "$(inherited) $(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/GoTrue";
+			};
+			name = Debug;
+		};
+		083681C1FDC565CF00000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TULSI_WR)/.",
+					"$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				OTHER_CFLAGS = (
+					"-D_FORTIFY_SOURCE=1",
+					"-D__DATE__=\"redacted\"",
+					"-D__TIMESTAMP__=\"redacted\"",
+					"-D__TIME__=\"redacted\"",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Lib/Logging/TLLoggingHelper.swift.modulemap";
+				PRODUCT_NAME = _idx_TLLogging_6291AD38_ios_min13.0;
+				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "$(inherited) $(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/Lib/Logging";
+			};
+			name = Debug;
+		};
+		083681C1FDC565CF00000004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TULSI_WR)/.",
+					"$(TULSI_EXECUTION_ROOT)/bazel-tulsi-includes/x/x/",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				OTHER_CFLAGS = (
+					"-D_FORTIFY_SOURCE=1",
+					"-D__DATE__=\"redacted\"",
+					"-D__TIMESTAMP__=\"redacted\"",
+					"-D__TIME__=\"redacted\"",
+				);
+				PRODUCT_NAME = _idx_TLLoggingHelper_0D168085_ios_min13.0;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "$(TULSI_WR)";
+			};
+			name = Debug;
+		};
+		083681C1FDC565CF00000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Stub Launch Image";
+				BAZEL_TARGET = "//App:ios_app";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				INFOPLIST_FILE = "${PROJECT_FILE_PATH}/.tulsi/Resources/StubInfoPlist.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thanhvu.test;
+				PRODUCT_NAME = ios_app;
+				SDKROOT = iphoneos;
+				TULSI_BUILD_PATH = App;
+				TULSI_XCODE_VERSION = 13.4.1.13F100;
+			};
+			name = Debug;
+		};
+		8384134428C62FDB008361F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = _bazel_clean_;
+			};
+			name = Debug;
+		};
+		8384134528C62FDB008361F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_NAME = _bazel_clean_;
+			};
+			name = Release;
+		};
+		8384134628C62FDB008361F5 /* __TulsiTestRunner_Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = _bazel_clean_;
+			};
+			name = __TulsiTestRunner_Debug;
+		};
+		8384134728C62FDB008361F5 /* __TulsiTestRunner_Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = _bazel_clean_;
+			};
+			name = __TulsiTestRunner_Release;
+		};
+		8384134828C62FDB008361F5 /* __TulsiTestRunner_Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = _idx_App_Classes_7152C54B_ios_min13.0;
+			};
+			name = __TulsiTestRunner_Debug;
+		};
+		8384134928C62FDB008361F5 /* __TulsiTestRunner_Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = _idx_App_Classes_7152C54B_ios_min13.0;
+			};
+			name = __TulsiTestRunner_Release;
+		};
+		8384134A28C62FDB008361F5 /* __TulsiTestRunner_Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = _idx_GoTrue_F7B3F50E_ios_min13.0;
+			};
+			name = __TulsiTestRunner_Debug;
+		};
+		8384134B28C62FDB008361F5 /* __TulsiTestRunner_Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = _idx_GoTrue_F7B3F50E_ios_min13.0;
+			};
+			name = __TulsiTestRunner_Release;
+		};
+		8384134C28C62FDB008361F5 /* __TulsiTestRunner_Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = _idx_TLLoggingHelper_0D168085_ios_min13.0;
+			};
+			name = __TulsiTestRunner_Debug;
+		};
+		8384134D28C62FDB008361F5 /* __TulsiTestRunner_Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = _idx_TLLoggingHelper_0D168085_ios_min13.0;
+			};
+			name = __TulsiTestRunner_Release;
+		};
+		8384134E28C62FDB008361F5 /* __TulsiTestRunner_Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = _idx_TLLogging_6291AD38_ios_min13.0;
+			};
+			name = __TulsiTestRunner_Debug;
+		};
+		8384134F28C62FDB008361F5 /* __TulsiTestRunner_Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = _idx_TLLogging_6291AD38_ios_min13.0;
+			};
+			name = __TulsiTestRunner_Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A13FA75501D7F46800000000 /* Build configuration list for PBXNativeTarget "_idx_TLLogging_6291AD38_ios_min13.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				083681C1FDC565CF00000003 /* Debug */,
+				083681C1F52E5D1900000003 /* Release */,
+				8384134E28C62FDB008361F5 /* __TulsiTestRunner_Debug */,
+				8384134F28C62FDB008361F5 /* __TulsiTestRunner_Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A13FA75594A7243B00000000 /* Build configuration list for PBXProject "SupabaseDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				083681C1FDC565CF00000000 /* Debug */,
+				083681C1F52E5D1900000000 /* Release */,
+				083681C10DCD4D8700000000 /* __TulsiTestRunner_Debug */,
+				083681C1C5E030F400000000 /* __TulsiTestRunner_Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A13FA755A248011C00000000 /* Build configuration list for PBXNativeTarget "ios_app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				083681C1FDC565CF00000005 /* Debug */,
+				083681C1F52E5D1900000005 /* Release */,
+				083681C10DCD4D8700000001 /* __TulsiTestRunner_Debug */,
+				083681C1C5E030F400000001 /* __TulsiTestRunner_Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A13FA755B657B26000000000 /* Build configuration list for PBXNativeTarget "_idx_TLLoggingHelper_0D168085_ios_min13.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				083681C1FDC565CF00000004 /* Debug */,
+				083681C1F52E5D1900000004 /* Release */,
+				8384134C28C62FDB008361F5 /* __TulsiTestRunner_Debug */,
+				8384134D28C62FDB008361F5 /* __TulsiTestRunner_Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A13FA755DAD4EE3900000000 /* Build configuration list for PBXNativeTarget "_idx_App_Classes_7152C54B_ios_min13.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				083681C1FDC565CF00000001 /* Debug */,
+				083681C1F52E5D1900000001 /* Release */,
+				8384134828C62FDB008361F5 /* __TulsiTestRunner_Debug */,
+				8384134928C62FDB008361F5 /* __TulsiTestRunner_Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A13FA755F6E22ADC00000000 /* Build configuration list for PBXLegacyTarget "_bazel_clean_" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8384134428C62FDB008361F5 /* Debug */,
+				8384134528C62FDB008361F5 /* Release */,
+				8384134628C62FDB008361F5 /* __TulsiTestRunner_Debug */,
+				8384134728C62FDB008361F5 /* __TulsiTestRunner_Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A13FA755F981B3C900000000 /* Build configuration list for PBXNativeTarget "_idx_GoTrue_F7B3F50E_ios_min13.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				083681C1FDC565CF00000002 /* Debug */,
+				083681C1F52E5D1900000002 /* Release */,
+				8384134A28C62FDB008361F5 /* __TulsiTestRunner_Debug */,
+				8384134B28C62FDB008361F5 /* __TulsiTestRunner_Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8CEED13A698CBA400000000 /* Project object */;
+}

@@ -1,6 +1,6 @@
 {
   "additionalFilePaths" : [
-    "ProjectManagement/BUILD",
+    "GoTrue/BUILD",
     "Lib/Logging/BUILD",
     "Assets/BUILD",
     "App/BUILD",
@@ -8,7 +8,6 @@
   ],
   "buildTargets" : [
     "//App:ios_app",
-    "//ProjectManagement:ProjectManagementTests"
   ],
   "optionSet" : {
 
@@ -55,16 +54,15 @@
       "p" : "$(inherited)"
     }
   },
-  "projectName" : "DemoTulsi",
+  "projectName" : "SupabaseDemo",
   "sourceFilters" : [
     "App/...",
     "App/Base.lproj",
     "Assets",
     "Lib/...",
     "Lib/Logging",
-    "ProjectManagement/...",
-    "ProjectManagement/Sources",
-    "ProjectManagement/Tests",
+    "GoTrue/...",
+    "GoTrue/Sources",
     "config"
   ]
 }

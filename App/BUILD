@@ -13,7 +13,7 @@ swift_library(
     ],
     deps = [
         "//Lib/Logging:TLLogging",
-        "//ProjectManagement",
+        "//GoTrue:GoTrue",
         "//Thirdparty/Supabase:Supabase"
     ],
 )
@@ -23,7 +23,7 @@ ios_application(
     bundle_id = "com.thanhvu.test",
     families = ["iphone"],
     infoplists = ["Info.plist"],
-    minimum_os_version = "12.0",
+    minimum_os_version = "13.0",
     visibility = ["//visibility:public"],
     deps = [
         ":App_Classes",

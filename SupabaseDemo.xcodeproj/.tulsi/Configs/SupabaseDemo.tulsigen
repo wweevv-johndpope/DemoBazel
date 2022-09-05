@@ -1,0 +1,28 @@
+{
+  "additionalFilePaths" : [
+    "GoTrue/BUILD",
+    "Lib/Logging/BUILD",
+    "Assets/BUILD",
+    "App/BUILD",
+    "config/BUILD"
+  ],
+  "buildTargets" : [
+    "//App:ios_app"
+  ],
+  "optionSet" : {
+    "ProjectGenerationPlatformConfiguration" : {
+      "p" : "ios_x86_64"
+    }
+  },
+  "projectName" : "SupabaseDemo",
+  "sourceFilters" : [
+    "App/...",
+    "App/Base.lproj",
+    "Assets",
+    "GoTrue/...",
+    "GoTrue/Sources",
+    "Lib/...",
+    "Lib/Logging",
+    "config"
+  ]
+}

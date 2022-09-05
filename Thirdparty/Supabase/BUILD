@@ -1,40 +1,28 @@
 load("@build_bazel_rules_apple//apple:apple.bzl","apple_dynamic_xcframework_import")
+load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
 
 
-objc_library(
+swift_library(
     name = "Supabase",
-    enable_modules = True,
     module_name = "Supabase",
-    deps = ["SupabaseXCFramework",
+    srcs = glob(["Sources/*.swift"]) ,
+    visibility = ["//visibility:public"],
+    deps = [
     "PostgREST",
     "AnyCodableXCFramework",
     "ComposableKeychainXCFramework",
     "KeychainAccessXCFramework",
     "GetXCFramework",
-    "GoTrue",
+    "//GoTrue:GoTrue",
     "RealtimeXCFramework",
     "StarscreamXCFramework",
     "SupabaseStorageXCFramework",
     "URLQueryEncoderXCFramework",
     "XCTestDynamicOverlayXCFramework"
-    ],
-    visibility = ["//visibility:public"]
+    ]
 )
 
 
-
-
-apple_dynamic_xcframework_import(
-    name = "SupabaseXCFramework",
-    xcframework_imports = glob(["Supabase.xcframework/**"] ),
-    library_identifiers = {
-        "ios_device": "ios-arm64",
-        "ios_simulator": "ios-arm64_x86_64-simulator",
-    },
-    deps = [],
-    visibility = ["//visibility:public"],
-#      infoplists = ["//submodules/TelegramUI/Supabase/PostgREST.xcframework:Info.plist"]
-)
 
 
 apple_dynamic_xcframework_import(
@@ -97,16 +85,16 @@ apple_dynamic_xcframework_import(
    # infoplists = ["//submodules/TelegramUI/Supabase/Get.xcframework:Info.plist"]
 )
 
-apple_dynamic_xcframework_import(
-    name = "GoTrue",
-    library_identifiers = {
-        "ios_device": "ios-arm64",
-        "ios_simulator": "ios-arm64_x86_64-simulator",
-    },
-    xcframework_imports = glob(["GoTrue.xcframework/**"] ),
-     visibility = ["//visibility:public"],
-    #infoplists = ["//submodules/TelegramUI/Supabase/GoTrue.xcframework:Info.plist"]
-)
+# apple_dynamic_xcframework_import(
+#     name = "GoTrue",
+#     library_identifiers = {
+#         "ios_device": "ios-arm64",
+#         "ios_simulator": "ios-arm64_x86_64-simulator",
+#     },
+#     xcframework_imports = glob(["GoTrue.xcframework/**"] ),
+#      visibility = ["//visibility:public"],
+#     #infoplists = ["//submodules/TelegramUI/Supabase/GoTrue.xcframework:Info.plist"]
+# )
 
 
 

@@ -1,33 +1,23 @@
 load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
-load("@build_bazel_rules_apple//apple:ios.bzl","ios_unit_test")
 
 
-MOCK_FILES = select({
-    "//config:is_release": [],
-    "//conditions:default": ["Mock.swift"],
-})
 
 swift_library(
-    name = "ProjectManagement",
-    module_name = "ProjectManagement",
-    srcs = glob(["Sources/*.swift"]) + MOCK_FILES,
+    name = "GoTrue",
+    module_name = "GoTrue",
+    srcs = glob(["Sources/**/*.swift"]) ,
     visibility = ["//visibility:public"],
+    deps= ["GetXCFramework",]
 )
 
-swift_library(
-    name = "ProjectManagementTestSuite",
-    srcs = glob(["Tests/*.swift"]),
-    deps = [
-        ":ProjectManagement",
-    ]
-)
 
-ios_unit_test(
-    name = "ProjectManagementTests",
-    deps = [
-        "ProjectManagementTestSuite",
-    ],
-    minimum_os_version = "12.0",
-    test_host = "//App:ios_app",
-    visibility = ["//visibility:public"],
+apple_dynamic_xcframework_import(
+    name = "GetXCFramework",
+    library_identifiers = {
+        "ios_device": "ios-arm64",
+        "ios_simulator": "ios-arm64_x86_64-simulator",
+    },
+    xcframework_imports = glob(["/ThirdParty/Supabase/Get.xcframework/**"] ),
+     visibility = ["//visibility:private"],
+   # infoplists = ["//submodules/TelegramUI/Supabase/Get.xcframework:Info.plist"]
 )
