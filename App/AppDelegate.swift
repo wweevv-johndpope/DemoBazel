@@ -38,7 +38,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rt = RealtimeClient(endPoint: "https://pqxcxltwoifmxcmhghzf.supabase.co/realtime/v1", params: ["apikey": supabaseKey])
         rt.connect()
         rt.onOpen {
-            let allUsersUpdateChanges = rt.channel(.table("test", schema: "public"))
+           
+            let allUsersUpdateChanges =  rt.channel(.all)//rt.channel(.table("test", schema: "public"))
             allUsersUpdateChanges.on(.all) { message in
                 print(message)
             }
