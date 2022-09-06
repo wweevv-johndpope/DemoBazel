@@ -26,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var id: Int?
     }
     
+    var allUsersUpdateChanges:Realtime.Channel?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -39,14 +41,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         rt.connect()
         rt.onOpen {
            
-            let allUsersUpdateChanges =  rt.channel(.all)//rt.channel(.table("test", schema: "public"))
-            allUsersUpdateChanges.on(.all) { message in
-                print(message)
+            self.allUsersUpdateChanges =  rt.channel(.all)//rt.channel(.table("test", schema: "public"))
+            self.allUsersUpdateChanges?.on(.all) { message in
+                print("☕️")
+                print(message.payload)
+                print(message.event)
+                print(message.status)
             }
-            allUsersUpdateChanges.subscribe()
+            self.allUsersUpdateChanges?.subscribe()
         }
         self.realtimeClient = rt
-        
+        self.realtimeClient?.onError{error in
+            print("🔥 error")
+            print(error)
+        }
+        self.realtimeClient?.onMessage{message in
+            print("🔖 message")
+            print(message.payload)
+            print(message.event)
+            print(message.status)
+//            print(message.joinRef)
+            
+        }
       
 //        allUsersUpdateChanges.unsubscribe()
 //        allUsersUpdateChanges.off(.update)

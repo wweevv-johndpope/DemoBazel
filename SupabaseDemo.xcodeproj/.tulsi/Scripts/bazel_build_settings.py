@@ -144,31 +144,9 @@ BUILD_SETTINGS = BazelBuildSettings(
     '/private/var/tmp/_bazel_johndpope/5e31052937adaaff177bb683eebace1b',
     'ios_x86_64',
     {
-        'ios_armv7': [
-            '--apple_platform_type=ios',
-            '--cpu=ios_armv7',
-            '--watchos_cpus=armv7k',
-        ],
-        'tvos_arm64': [
-            '--apple_platform_type=tvos',
-            '--tvos_cpus=arm64',
-        ],
-        'macos_arm64': [
-            '--apple_platform_type=macos',
-            '--cpu=darwin_arm64',
-        ],
-        'watchos_arm64_32': [
-            '--apple_platform_type=watchos',
-            '--watchos_cpus=armv7k,arm64_32',
-        ],
         'tvos_x86_64': [
             '--apple_platform_type=tvos',
             '--tvos_cpus=x86_64',
-        ],
-        'ios_arm64': [
-            '--apple_platform_type=ios',
-            '--cpu=ios_arm64',
-            '--watchos_cpus=armv7k,arm64_32',
         ],
         'watchos_armv7k': [
             '--apple_platform_type=watchos',
@@ -179,22 +157,14 @@ BUILD_SETTINGS = BazelBuildSettings(
             '--cpu=ios_x86_64',
             '--watchos_cpus=i386',
         ],
-        'ios_sim_arm64': [
-            '--apple_platform_type=ios',
-            '--cpu=ios_sim_arm64',
-            '--watchos_cpus=armv7k',
-        ],
-        'watchos_x86_64': [
-            '--apple_platform_type=watchos',
-            '--watchos_cpus=i386',
-        ],
-        'macos_x86_64': [
-            '--apple_platform_type=macos',
-            '--cpu=darwin_x86_64',
-        ],
         'macos_arm64e': [
             '--apple_platform_type=macos',
             '--cpu=darwin_arm64e',
+        ],
+        'ios_i386': [
+            '--apple_platform_type=ios',
+            '--cpu=ios_i386',
+            '--watchos_cpus=i386',
         ],
         'ios_arm64e': [
             '--apple_platform_type=ios',
@@ -205,10 +175,40 @@ BUILD_SETTINGS = BazelBuildSettings(
             '--apple_platform_type=watchos',
             '--watchos_cpus=i386',
         ],
-        'ios_i386': [
+        'ios_armv7': [
             '--apple_platform_type=ios',
-            '--cpu=ios_i386',
+            '--cpu=ios_armv7',
+            '--watchos_cpus=armv7k',
+        ],
+        'macos_x86_64': [
+            '--apple_platform_type=macos',
+            '--cpu=darwin_x86_64',
+        ],
+        'watchos_arm64_32': [
+            '--apple_platform_type=watchos',
+            '--watchos_cpus=armv7k,arm64_32',
+        ],
+        'watchos_x86_64': [
+            '--apple_platform_type=watchos',
             '--watchos_cpus=i386',
+        ],
+        'ios_sim_arm64': [
+            '--apple_platform_type=ios',
+            '--cpu=ios_sim_arm64',
+            '--watchos_cpus=armv7k',
+        ],
+        'tvos_arm64': [
+            '--apple_platform_type=tvos',
+            '--tvos_cpus=arm64',
+        ],
+        'macos_arm64': [
+            '--apple_platform_type=macos',
+            '--cpu=darwin_arm64',
+        ],
+        'ios_arm64': [
+            '--apple_platform_type=ios',
+            '--cpu=ios_arm64',
+            '--watchos_cpus=armv7k,arm64_32',
         ],
     },
     set([

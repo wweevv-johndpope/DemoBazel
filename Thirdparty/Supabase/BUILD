@@ -101,8 +101,8 @@ apple_dynamic_xcframework_import(
 apple_dynamic_xcframework_import(
     name = "RealtimeXCFramework",
     library_identifiers = {
-        "ios_device": "ios-arm64_armv7",
-        "ios_simulator": "ios-arm64_i386_x86_64-simulator",
+        "ios_device": "ios-arm64",
+        "ios_simulator": "ios-arm64_x86_64-simulator",
     },
     xcframework_imports = glob(["Realtime.xcframework/**"] ),
      visibility = ["//visibility:public"],
